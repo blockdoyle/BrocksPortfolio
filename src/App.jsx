@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Container className="border">
+      <Container className="border border-3">
         <Row>
           <Col>
             <HomePage />
