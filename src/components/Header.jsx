@@ -2,22 +2,30 @@ import Nav from "react-bootstrap/Nav";
 
 function Header() {
   return (
-    <div className="Portfolio-header">
-      <div className="Portfolio-title text-center">
+    <div className="portfolio-header">
+      <div className="portfolio-title text-center">
         <h1>Brock Lockhart-Doyle</h1>
       </div>
       <Nav className="justify-content-center" activeKey="/home">
         <Nav.Item>
-          <Nav.Link href="/home">Home</Nav.Link>
+          <Nav.Link href="/home" className="navlinks">
+            Home
+          </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/about">About</Nav.Link>
+          <Nav.Link href="/about" className="navlinks">
+            About
+          </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/projects">Projects</Nav.Link>
+          <Nav.Link href="/projects" className="navlinks">
+            Projects
+          </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/contact">Contact</Nav.Link>
+          <Nav.Link href="/contact" className="navlinks">
+            Contact
+          </Nav.Link>
         </Nav.Item>
       </Nav>
     </div>

@@ -1,4 +1,4 @@
-// import "./App.css";
+import "./App.css";
 import HomePage from "./components/HomePage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Container className="border border-3">
+      <Container className="border border-3 content-section rounded p-2">
         <Row>
           <Col>
             <HomePage />
