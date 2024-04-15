@@ -4,14 +4,26 @@ import Nav from "react-bootstrap/Nav";
 function Footer() {
   return (
     <>
-      <footer className="text-center p-5 text">
-        <p>Made with ♥ by Brock Lockhart-Doyle</p>
+      <p className="text text-center mt-2">
+        Made with ♥ by: Brock Lockhart-Doyle
+      </p>
+      <Nav className="justify-content-center">
         <Nav.Item>
           <Nav.Link as={Link} to="https://github.com/blockdoyle">
             GitHub
           </Nav.Link>
         </Nav.Item>
-      </footer>
+        <Nav.Item>
+          <Nav.Link as={Link} to="https://linkedin.com/in/blockdoyle">
+            LinkedIn
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link as={Link} to="https://twitter.com/_blockdoyle">
+            X/Twitter
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
     </>
   );
 }
