@@ -5,18 +5,13 @@ function Navbar() {
   return (
     <Nav className="justify-content-center">
       <Nav.Item>
-        <Nav.Link as={Link} to="/">
-          Home
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
         <Nav.Link as={Link} to="/about">
           About
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link as={Link} to="/projects">
-          Projects
+        <Nav.Link as={Link} to="/portfolio">
+          Portfolio
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
