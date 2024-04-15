@@ -1,6 +1,6 @@
 import "./App.css";
 import HomePage from "./pages/HomePage";
-import Header from "./components/Nav";
+import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Col, Container, Row } from "react-bootstrap";
@@ -13,7 +13,7 @@ function App() {
           <h1>Brock Lockhart-Doyle</h1>
         </div>
       </div>
-      <Header />
+      <Nav />
       <Container className="border border-3 content-section rounded p-2 mt-3">
         <Row>
           <Col>
