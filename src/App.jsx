@@ -17,7 +17,7 @@ function App() {
       <Container className="border border-3 content-section rounded p-2 mt-3">
         <Row>
           <Col>
-            <Outlet />
+            <Outlet /> {/* This is where the child routes will be rendered */}
           </Col>
         </Row>
       </Container>
