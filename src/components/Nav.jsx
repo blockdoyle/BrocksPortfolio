@@ -1,22 +1,31 @@
+import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 
-function Header() {
+function Navbar() {
   return (
-    <Nav className="justify-content-center" activeKey="/home">
+    <Nav className="justify-content-center">
       <Nav.Item>
-        <Nav.Link href="/home">Home</Nav.Link>
+        <Nav.Link as={Link} to="/">
+          Home
+        </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="/about">About</Nav.Link>
+        <Nav.Link as={Link} to="/about">
+          About
+        </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="/projects">Projects</Nav.Link>
+        <Nav.Link as={Link} to="/projects">
+          Projects
+        </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="/contact">Contact</Nav.Link>
+        <Nav.Link as={Link} to="/contact">
+          Contact
+        </Nav.Link>
       </Nav.Item>
     </Nav>
   );
 }
 
-export default Header;
+export default Navbar;
