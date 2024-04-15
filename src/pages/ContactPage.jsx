@@ -21,6 +21,15 @@ export default function ContactPage() {
     }
   };
 
+  const isEmailValid = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      email.target.setCustomValidity("Invalid email address");
+    } else {
+      email.target.setCustomValidity("");
+    }
+  };
+
   return (
     <div className="text-center">
       <h1>Contact Me</h1>
@@ -35,7 +44,7 @@ export default function ContactPage() {
           <input
             type="email"
             placeholder="Email"
-            onBlur={handleBlur}
+            onBlur={handleBlur || isEmailValid}
             name="email"
           />
           <textarea placeholder="Message" onBlur={handleBlur} name="message" />
