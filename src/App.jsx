@@ -1,9 +1,9 @@
 import "./App.css";
-import HomePage from "./pages/HomePage";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Col, Container, Row } from "react-bootstrap";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <Container className="border border-3 content-section rounded p-2 mt-3">
         <Row>
           <Col>
-            <HomePage />
+            <Outlet />
           </Col>
         </Row>
       </Container>
