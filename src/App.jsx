@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <div className="portfolio-header text">
-        <div className="portfolio-title text-center">
+        <div className="portfolio-title text-center mt-4">
           <h1>Brock Lockhart-Doyle</h1>
         </div>
       </div>
