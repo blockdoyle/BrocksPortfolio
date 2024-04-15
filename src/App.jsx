@@ -1,6 +1,6 @@
 import "./App.css";
 import HomePage from "./components/HomePage";
-import Header from "./components/Header";
+import Header from "./components/Nav";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Col, Container, Row } from "react-bootstrap";
