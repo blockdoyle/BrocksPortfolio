@@ -8,13 +8,13 @@ import { Outlet } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <div className="portfolio-header">
+      <div className="portfolio-header text">
         <div className="portfolio-title text-center">
           <h1>Brock Lockhart-Doyle</h1>
         </div>
       </div>
       <Nav />
-      <Container className="border border-3 content-section rounded p-2 mt-3">
+      <Container className="border border-3 content-section rounded p-2 mt-3 text">
         <Row>
           <Col>
             <Outlet /> {/* This is where the child routes will be rendered */}
